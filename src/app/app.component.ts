@@ -9,7 +9,7 @@ export class AppComponent {
   quotes :string[];
 
     constructor(){
-      this.quotes= ["The day it ended","When the sun sets, Wisdom over money"]
+      this.quotes= ["The day it all ended","When the sun sets, Wisdom over money"]
     }
 
 }
