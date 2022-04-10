@@ -8,16 +8,26 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]= [
-    new Quote(1,'The day it all ended','The author is Maradona'),
-    new Quote(2,'When the sun sets','The author is Gandi'),
-    new Quote(3,'Wisdom over money','The author is Sigmund'),
+    new Quote(1,'The day it all ended','The author is Maradona ',new Date(2022,4,11) ),
+    new Quote(2,'When the sun sets','The author is Gandi',new Date(2022,4,12)),
+    new Quote(3,'Wisdom over money','The author is Sigmund',new Date(2022,4,13)),
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-  completeQuote(isComplete, index){
+  // completeGoal(isComplete, index){
+  //   if (isComplete) {
+  //     this.quotes.splice(index,1);
+  //   }
+  // }
+  
+  deleteQuote(isComplete, index){
     if (isComplete) {
-      this.quotes.splice(index,1);
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
     }
   }
   
