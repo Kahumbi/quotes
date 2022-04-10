@@ -7,13 +7,15 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quote:Quote[]=[
-    
-  ]
+  quotes:Quote[]= [
+    {id:1,name:'The day it all ended',description:'The author rodney'},
+    {id:2,name:'When the sun sets',description:'The author  gandi'},
+    {id:3,name:'Wisdom over money',description:'The author sigmund'},
+  ];
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
