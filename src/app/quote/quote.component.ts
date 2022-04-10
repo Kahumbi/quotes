@@ -8,11 +8,19 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]= [
-    {id:1,name:'The day it all ended',description:'The author is Maradona'},
-    {id:2,name:'When the sun sets',description:'The author is Gandi'},
-    {id:3,name:'Wisdom over money',description:'The author is Sigmund'},
+    new Quote(1,'The day it all ended','The author is Maradona'),
+    new Quote(2,'When the sun sets','The author is Gandi'),
+    new Quote(3,'Wisdom over money','The author is Sigmund'),
   ];
-
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
+  
   constructor() { }
 
   ngOnInit() {
