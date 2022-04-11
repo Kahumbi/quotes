@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]= [
-    new Quote(1,'The day it all ended','The author is Maradona ',new Date(2022,4,11) ),
-    new Quote(2,'When the sun sets','The author is Gandi',new Date(2022,4,12)),
-    new Quote(3,'Wisdom over money','The author is Sigmund',new Date(2022,4,13)),
+    new Quote(1,'"The supreme art of war is to subdue the enemy without fighting"','The author is Sun Tzu ',new Date(2022,4,11) ),
+    new Quote(2,'"This violent delights have violent ends"','The author is William Shakespeare',new Date(2022,4,12)),
+    new Quote(3,'"One must be sane to think clearly but one can think deeply and be quite insane"','The author is Nikola Tesla',new Date(2022,4,13)),
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
@@ -32,8 +32,8 @@ export class QuoteComponent implements OnInit {
   }
   
   addNewQuote(quote){
-    let goalLength = this.quotes.length;
-    quote.id = goalLength+1;
+    let quotesize = this.quotes.length;
+    quote.id = quotesize+1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
