@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <h2 class="text-center">Create a new Goal</h2>
     <hr>
     <form>
@@ -19,5 +19,45 @@
             <input type='date' id="complete" required>
   
         </div>
+    </form>
+  </div> -->
+
+
+
+
+  <div class="container-fluid">
+    <h2 class="text-center">Create a new Quote</h2>
+    <hr>
+    <form #quoteForm='ngForm'>
+        <div class="form-group">
+  
+            <label for="name">User Name</label>
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                <p>Name is required</p>
+              </div>
+  <!-- Testing to see if we get any data -->
+             {{newQuote.name}}
+        </div>
+        <div class="form-group">
+  
+            <label for="description">Add Quote</label>
+            <textarea class="form-control" id="description" rows="4" required></textarea>
+  
+        </div>
+        <div class="form-group">
+  
+            <label for="name">Author Name</label>
+            <input type="text" required class="form-control" id="Author" [(ngModel)]="newQuote.name" name="name">
+  
+            Display {{newQuote.name}}
+        </div>
+        <div class="form-group">
+ 
+            <label for="complete">days left</label>
+            <input type='date' id="complete" required>
+  
+        </div>
+        <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
   </div>
