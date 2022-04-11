@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]= [
-    new Quote(1,'"The supreme art of war is to subdue the enemy without fighting"','The author is Sun Tzu ',new Date(2022,4,11) ),
+    new Quote(1,'"The supreme art of war is to subdue thy enemy without fighting"','The author is Sun Tzu ',new Date(2022,4,11) ),
     new Quote(2,'"This violent delights have violent ends"','The author is William Shakespeare',new Date(2022,4,12)),
     new Quote(3,'"One must be sane to think clearly but one can think deeply and be quite insane"','The author is Nikola Tesla',new Date(2022,4,13)),
   ];

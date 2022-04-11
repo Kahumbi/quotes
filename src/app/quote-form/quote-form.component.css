@@ -1,0 +1,10 @@
+.container-fluid{
+    background-color: #EABF9F;
+}
+.text-center{
+    font-size: 4ch;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: #91091E;
+}

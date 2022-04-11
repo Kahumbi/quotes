@@ -1,11 +1,11 @@
 <div class="container">
-    <h1>My Quotes</h1>
+    <h1 class="heading">My Quotes</h1>
     <hr>
     <div class="row">
       <div class="col-md-6">
         <div *ngFor='let quote of quotes;let i = index'>
-          <li>{{quote.id}},{{quote.name}}</li>
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
+          <li>{{quote.id}} {{quote.name}} {{quote.description}},</li>
+            <button class="ram" (click)='toggleDetails(i)'>Toggle Details</button>
             <app-votes></app-votes>
             <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
         </div>
