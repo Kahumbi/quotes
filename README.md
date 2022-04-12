@@ -1,6 +1,11 @@
 # Quotes
 
+## Description
+Quotes app is an angular generated application that is used to help users find quotes for reference as well as users can also make their own quotes and get to see which quotes got the highest or lowest number of votes.  
+
+## Technologies used
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+Html, Css, Typescript
 
 ## Development server
 
@@ -9,6 +14,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Copyright & Liscence Info 
+Copyright and liscence information for this application have been registered under MIT LISCENCE. The author of this app is David Kahumbi.
+The live link to site is on GITHUB pages
 
 ## Build
 
