@@ -17,7 +17,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Copyright & Liscence Info 
 Copyright and liscence information for this application have been registered under MIT LISCENCE. The author of this app is David Kahumbi.
-The live link to site is on GITHUB pages
+The live link to site is on GITHUB pages https://kahumbi.github.io/quotes/
 
 ## Build
 
